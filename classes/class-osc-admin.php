@@ -5,7 +5,7 @@ namespace OSC;
 class OSC_Admin {
 	public function __construct() {
 		// Actions
-		add_action( 'init', [ $this, 'add_options_page' ] );
+		add_action( 'admin_menu', [ $this, 'add_options_page' ] );
 		add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_assets' ] );
 		add_action( 'wp_ajax_osc_update_options', [ $this, 'handle_update_options_request' ] );
 
