@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Sitemap Configurator
  * Description: Sitemap configurator
- * Version: 1.0.0
+ * Version: 0.9.0
  */
 
 /**
@@ -11,6 +11,7 @@
 
 use OSC\OSC_Activator;
 use OSC\OSC_Admin;
+use OSC\OSC_Configurator;
 use OSC\OSC_Options;
 
 define( 'OSC_PATH', realpath( dirname( __FILE__ ) ) . '/' );
@@ -22,7 +23,7 @@ define( 'OSC_URL', plugin_dir_url( __FILE__ ) );
  *
  * @param $class_name
  *
- * @since 1.0.0
+ * @since 0.9.0
  *
  */
 spl_autoload_register( 'osc_autoloader' );
@@ -60,6 +61,7 @@ if ( ! function_exists( 'osc_init_plugin' ) ) {
 		global $osc_options;
 		$osc_options = new OSC_Options();
 		$osc_admin   = new OSC_Admin();
+		$osc_configurator = new OSC_Configurator();
 	}
 
 	osc_init_plugin();

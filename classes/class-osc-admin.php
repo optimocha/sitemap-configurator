@@ -31,9 +31,9 @@ class OSC_Admin {
 	public function enqueue_assets() {
 		wp_enqueue_style( 'shared-ui', OSC_URL . '/assets/shared-ui/css/shared-ui.min.css', [], '2.10.6' );
 		wp_enqueue_style( 'sui-wp-editor', OSC_URL . '/assets/shared-ui/css/sui-wp-editor.min.css', [], '2.10.6' );
-		wp_enqueue_style( 'osc-admin', OSC_URL . '/assets/css/osc-admin.css', [], '1.0.0' );
-		wp_enqueue_script( 'shared-ui', OSC_URL . '/assets/shared-ui/js/shared-ui.js', [ 'jquery' ], '1.0.0', true );
-		wp_enqueue_script( 'osc-admin', OSC_URL . '/assets/js/osc-admin.js', [ 'jquery' ], '1.0.0', true );
+		wp_enqueue_style( 'osc-admin', OSC_URL . '/assets/css/osc-admin.css', [], '0.9.0' );
+		wp_enqueue_script( 'shared-ui', OSC_URL . '/assets/shared-ui/js/shared-ui.js', [ 'jquery' ], '0.9.0', true );
+		wp_enqueue_script( 'osc-admin', OSC_URL . '/assets/js/osc-admin.js', [ 'jquery' ], '0.9.0', true );
 	}
 
 	public function sc_admin_body_classes( $classes ) {
