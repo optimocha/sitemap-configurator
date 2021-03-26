@@ -31,6 +31,13 @@ class OSC_Configurator {
 			unset( $post_types['page'] );
 		}
 
+		// Check attachments
+		$enable_attachments = $osc_options->get( 'enable_attachments', 0 );
+		if (1 == $enable_attachments) {
+			$attachmentType = get_post_type_object('attachment');
+			$post_types['attachment'] = $attachmentType;
+		}
+
 		return $post_types;
 	}
 

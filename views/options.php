@@ -96,6 +96,22 @@
                     </label>
                 </div>
                 <div class="sui-form-field">
+                    <label for="attachment-sitemaps" class="sui-toggle">
+                        <input
+                                name="osc_options[enable_attachments]"
+                                type="checkbox"
+                                id="attachment-sitemaps"
+                                aria-labelledby="unique-id-label"
+                                aria-describedby="unique-id-description"
+							<?php echo $osc_options->get( 'enable_attachments', false ) == true ? 'checked' : null; ?>
+                                value="1"
+                        />
+                        <span class="sui-toggle-slider" aria-hidden="true"></span>
+                        <span id="unique-id-label" class="sui-toggle-label">Toggle Category Sitemaps</span>
+                        <span id="unique-id-description" class="sui-description">Show/hide categories on default sitemap.xml</span>
+                    </label>
+                </div>
+                <div class="sui-form-field">
                     <button type="submit" class="sui-button sui-button-green sui-button-lg">Save Settings</button>
 
                 </div>

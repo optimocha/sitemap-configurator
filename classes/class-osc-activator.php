@@ -14,6 +14,7 @@ class OSC_Activator {
 		'enable_users' => '1',
 		'enable_tags' => '1',
 		'enable_categories' => '1',
+		'enable_attachments' => '0',
 	];
 
 	public function __construct() {

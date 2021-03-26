@@ -14,7 +14,8 @@ class OSC_Admin {
 	}
 
 	public function add_options_page() {
-		add_menu_page(
+		add_submenu_page(
+			'options-general.php',
 			__( 'Sitemap Configurator', 'sitemap-configurator' ),
 			__( 'Sitemap Configurator', 'sitemap-configurator' ),
 			'manage_options',
