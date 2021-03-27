@@ -1,12 +1,16 @@
 <?php
-/**
- * Plugin Name: Sitemap Configurator
- * Description: Sitemap configurator
- * Version: 0.9.0
- */
 
 /**
- * Plugin Path
+ * Plugin Name:			Sitemap Configurator
+ * Description:			A tiny plugin to configure the WordPress core sitemap.
+ * Version:				0.9
+ * Requires at least:	5.5
+ * Requires PHP:		5.6
+ * Author:				Optimocha
+ * Author URI:			https://optimocha.com/
+ * License:				GPL v2 or later
+ * License URI:			https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:			sitemap-configurator
  */
 
 use OSC\OSC_Activator;

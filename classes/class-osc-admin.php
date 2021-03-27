@@ -59,7 +59,7 @@ class OSC_Admin {
 
 			echo wp_json_encode([
 				'status' => 'success',
-				'message' => __( 'Sitemap options updated successfully.', 'sitemap-configurator' ),
+				'message' => __( 'Options updated successfully.', 'sitemap-configurator' ),
 			]);
 			wp_die();
 		}
