@@ -1,0 +1,17 @@
+{
+    "name": "optimocha/sitemap-configurator",
+    "description": "Sitemap Configurator for WordPress",
+    "type": "project",
+    "license": "GPLv2",
+    "autoload": {
+        "psr-4": {
+            "Optimocha\\SitemapConfigurator\\": "./classes/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Optimocha"
+        }
+    ],
+    "require": {}
+}

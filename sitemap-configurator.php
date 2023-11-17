@@ -30,21 +30,21 @@ define( 'OSC_URL', plugin_dir_url( __FILE__ ) );
  * @since 0.9.0
  *
  */
-spl_autoload_register( 'osc_autoloader' );
-function osc_autoloader( $class_name ) {
-	if ( false === strpos( $class_name, 'OSC\\' ) ) {
-		return;
-	}
+// spl_autoload_register( 'osc_autoloader' );
+// function osc_autoloader( $class_name ) {
+// 	if ( false === strpos( $class_name, 'OSC\\' ) ) {
+// 		return;
+// 	}
 
-	$class_name = str_replace( 'OSC\\', '', $class_name );
+// 	$class_name = str_replace( 'OSC\\', '', $class_name );
 
-	// Make filename lower case, it's not necessary but do it just in "case" :P (Did you get the joke?)
-	$filename = strtolower( str_replace( '_', '-', $class_name ) );
-	$path     = OSC_PATH . 'classes/class-' . $filename . '.php';
-	if ( file_exists( $path ) ) {
-		require_once( $path );
-	}
-}
+// 	// Make filename lower case, it's not necessary but do it just in "case" :P (Did you get the joke?)
+// 	$filename = strtolower( str_replace( '_', '-', $class_name ) );
+// 	$path     = OSC_PATH . 'classes/class-' . $filename . '.php';
+// 	if ( file_exists( $path ) ) {
+// 		require_once( $path );
+// 	}
+// }
 
 // Activator
 register_activation_hook( __FILE__, 'activate_sitemap_configurator' );
